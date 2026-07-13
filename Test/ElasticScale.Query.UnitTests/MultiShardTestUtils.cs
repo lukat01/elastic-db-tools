@@ -33,7 +33,7 @@ namespace Microsoft.Azure.SqlDatabase.ElasticScale.Query.UnitTests
         /// <summary>
         /// User password to use when connecting to shards during a fanout query.
         /// </summary>
-        private static string s_testPassword = "J8X2ndQTZ8cvu1r";
+        private static string s_testPassword = "Pwd_" + Guid.NewGuid().ToString("N") + "!aA1";
 
         /// <summary>
         /// Table name for the sharded table we will issue fanout queries against.

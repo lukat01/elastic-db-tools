@@ -85,7 +85,7 @@ namespace Microsoft.Azure.SqlDatabase.ElasticScale.ShardManagement.UnitTests
         /// <summary>
         /// Password for test user. (with ' and ; replaced with _ to enable test code to work without T/SQL and connection string escaping)
         /// </summary>
-        internal static readonly string SqlLoginTestPassword = "TestPa$$w0rd" + Guid.NewGuid().ToString("N");
+        internal static readonly string SqlLoginTestPassword = "Pwd_" + Guid.NewGuid().ToString("N") + "!aA1";
 
         /// <summary>
         /// SMM connection string.
